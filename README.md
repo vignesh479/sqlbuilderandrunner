@@ -165,17 +165,10 @@ The application uses CSS custom properties for easy theming:
 
 ## 🔧 Advanced Features
 
-### **Smart Filtering**
-- **Type-aware operators**: Different operators for strings, numbers, dates
-- **BETWEEN ranges**: Numeric range filtering with validation
-- **Boolean logic**: AND/OR combinations for complex filters
-- **Real-time validation**: Instant feedback on filter validity
-
 ### **Accessibility Features**
 - **Focus trapping**: Modals keep focus within boundaries
 - **Keyboard navigation**: Full app navigation without mouse
 - **Screen reader support**: Comprehensive ARIA labels
-- **High contrast**: Accessible color combinations
 
 ### **Performance Features**
 - **Virtual scrolling**: Handle thousands of rows efficiently
