@@ -38,6 +38,13 @@ A SQL query builder and executor built with React.
 
 ## 🛠️ Technical Architecture
 
+### **Build System & Bundling**
+- **Create React App (CRA)**: Established React toolchain with Webpack 5
+- **Webpack Bundle Optimization**: Tree shaking, code splitting, and asset optimization
+- **Hot Module Replacement**: Fast development with instant updates
+- **Modern JavaScript**: Babel transpilation with browserslist configuration
+- **Production Ready**: Minification, compression, and performance optimizations
+
 ### **Performance Optimizations**
 - **React.memo**: All components optimized with memoization
 - **useMemo & useCallback**: Intelligent caching of expensive operations
