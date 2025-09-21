@@ -4,7 +4,7 @@ A SQL query builder and executor built with React.
 
 ## Walkthrough Video
 
-[Link Text](https://drive.google.com/file/d/11Hd5kkTZ321xIFWy0GohzsOoHOjEC-LC/view?usp=sharing)
+[Walkthrough Video Link](https://drive.google.com/file/d/11Hd5kkTZ321xIFWy0GohzsOoHOjEC-LC/view?usp=sharing)
 
 ## 🛠️ Technical Architecture
 
