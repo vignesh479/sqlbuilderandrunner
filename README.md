@@ -2,40 +2,6 @@
 
 A SQL query builder and executor built with React.
 
-## 🚀 Key Features
-
-### 🎯 **Dual Query Modes**
-- **Simple Query Builder**: Interface for creating complex SQL queries easily.
-- **SQL Editor**: Textarea to enter the sql queries
-
-### ⚡ **Performance & UX**
-- **Smart Pagination**: Compact pagination with configurable page sizes (10-10,000 rows)
-- **Lazy Loading**: Efficient rendering of large datasets with virtual scrolling
-- **Advanced Search & Filtering**: Real-time table filtering with multiple operators
-- **Table Interactions**: Pin columns, keyboard navigation (arrow keys, tab)
-- **Sidebar with Custom queries**: Create or select custom queries that you execute often for better user experience
-
-### 🔍 **Advanced Data Exploration**
-- **Dynamic Column Pinning**: Pin important columns to the left
-- **Intelligent Search**: Global search modal with type-aware filtering
-- **Result Export**: Export filtered results to various formats
-- **Query History**: Recent queries dropdown with quick access
-
-### ⌨️ **Keyboard Shortcuts**
-- **Ctrl+/**: Open Simple Query Builder
-- **Ctrl+Enter**: Execute current query
-- **Tab**: Navigate through interactive elements
-
-### ♿ **Accessibility First**
-- **Screen Reader Friendly**: Comprehensive ARIA labels and roles
-- **Focus Management**: Proper focus trapping in modals
-- **High Contrast**: Accessible color schemes and visual indicators
-
-### 📱 **Responsive Design**
-- **Mobile Optimized**: Touch-friendly interface for tablets and phones
-- **Adaptive Layout**: Dynamic UI adjustments for different screen sizes
-- **Progressive Enhancement**: Core functionality works on all devices
-
 ## 🛠️ Technical Architecture
 
 ### **Build System & Bundling**
@@ -44,6 +10,28 @@ A SQL query builder and executor built with React.
 - **Hot Module Replacement**: Fast development with instant updates
 - **Modern JavaScript**: Babel transpilation with browserslist configuration
 - **Production Ready**: Minification, compression, and performance optimizations
+
+### **Performance Monitoring**
+The application includes built-in performance monitoring to track load times:
+
+```javascript
+// Performance measurement implementation (src/index.js)
+window.addEventListener("load", function() {
+  setTimeout(() => {
+    const perf = window.performance.getEntriesByType("navigation")[0];
+    const loadTime = perf.loadEventEnd - perf.requestStart;
+    console.log(`Load time: ${loadTime}ms`);
+  }, 0);
+});
+```
+
+**Current Performance Metrics:**
+- ⚡ **Initial Load Time**: ~750ms (measured from request start to load complete)
+
+**Measurement Methodology:**
+- Uses **Navigation Timing API** for accurate browser-level measurements
+- Captures **end-to-end load time** from network request to DOM ready
+- **Console logging** for easy development monitoring
 
 ### **Performance Optimizations**
 - **React.memo**: All components optimized with memoization
@@ -81,6 +69,40 @@ src/
     ├── operators.js             # Filter operators
     └── mockData.js              # Sample data
 ```
+
+## 🚀 Key Features
+
+### 🎯 **Dual Query Modes**
+- **Simple Query Builder**: Interface for creating complex SQL queries easily.
+- **SQL Editor**: Textarea to enter the sql queries
+
+### ⚡ **Performance & UX**
+- **Smart Pagination**: Compact pagination with configurable page sizes (10-10,000 rows)
+- **Lazy Loading**: Efficient rendering of large datasets with virtual scrolling
+- **Advanced Search & Filtering**: Real-time table filtering with multiple operators
+- **Table Interactions**: Pin columns, keyboard navigation (arrow keys, tab)
+- **Sidebar with Custom queries**: Create or select custom queries that you execute often for better user experience
+
+### 🔍 **Advanced Data Exploration**
+- **Dynamic Column Pinning**: Pin important columns to the left
+- **Intelligent Search**: Global search modal with type-aware filtering
+- **Result Export**: Export filtered results to various formats
+- **Query History**: Recent queries dropdown with quick access
+
+### ⌨️ **Keyboard Shortcuts**
+- **Ctrl+/**: Open Simple Query Builder
+- **Ctrl+Enter**: Execute current query
+- **Tab**: Navigate through interactive elements
+
+### ♿ **Accessibility First**
+- **Screen Reader Friendly**: Comprehensive ARIA labels and roles
+- **Focus Management**: Proper focus trapping in modals
+- **High Contrast**: Accessible color schemes and visual indicators
+
+### 📱 **Responsive Design**
+- **Mobile Optimized**: Touch-friendly interface for tablets and phones
+- **Adaptive Layout**: Dynamic UI adjustments for different screen sizes
+- **Progressive Enhancement**: Core functionality works on all devices
 
 ## 🏁 Getting Started
 
